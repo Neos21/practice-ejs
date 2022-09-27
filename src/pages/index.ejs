@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include('../partials/head'); -%>  <!-- `-%` : Trim New Line -->
+  </head>
+  <body>
+    <header>
+      <% const title = '<h1>Hello World</h1>'; %>
+      <%- title %>  <!-- `%-` : Unescaped -->
+    </header>
+    <main>
+      <ul>
+        <%_ for(let i = 1; i <= 3; i++) { _%>
+          <li><%= i %></li>
+        <%_ } _%>
+      </ul>
+    </main>
+    <footer>
+      Footer
+    </footer>
+   </body>
+</html>
